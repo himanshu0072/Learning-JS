@@ -12,6 +12,8 @@
     <hr />
     <br />
 
+    <h3 style="text-align: center">Introduction To JS</h3>
+    <br />
     <div id="AllElement">
       <!-- JS can change HTML content -->
       <p id="para"></p>
@@ -25,8 +27,20 @@
     <button onclick="ClearAll()">
       Click me to use externel Javascript to Clear all the Text from the page
     </button>
+
+    <h3 style="text-align: center">JS Outuput - 4 types</h3>
+    <br />
+    <div id="Output">
+      <p id="inner"></p>
+      <p id="write">2) document.write()</p>
+      <p id="alert">3) window.alert()</p>
+      <p id="log">4) console.log()</p>
+      <button onclick="window.print()">Click this button to print this page</button>
+    </div>
+
     <!-- This is the code of Javascript -->
     <script>
+      //All Element
       //J S can change HTML content
       document.getElementById("para").innerHTML =
         "Hello this is my first js code ";
@@ -37,6 +51,14 @@
       //JS can Show/Hide HTML Element
       document.getElementById("hide").style.display = "none";
       document.getElementById("show").style.display = "block";
+
+      //Output
+      document.getElementById("inner").innerHTML =
+        "1) I am Written here Through .innerHTML";
+    //   document.write("I am printed here by document.write()");
+      console.log("I am printed here by console.log()");
+    //   window.alert("i am a alert");
+    </script>
     </script>
   </body>
 </html>
