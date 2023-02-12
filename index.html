@@ -9,7 +9,28 @@
   <body>
     <h1 style="text-align: center">Learning JS | Target 28 Feb, 2023</h1>
     <hr />
+    <br />
+    <!-- JS can change HTML content -->
+    <p id="para"></p>
+    <!-- JS can change HTML attribute -->
+    <p id="attribute">This is a example of attribute changing</p>
+    <!-- JS can Hide HTML Element -->
+    <p id="hide">I am going to hide. LOL !</p>
+    <!-- JS can Hide HTML Element -->
+    <p id="show">I am a hidden Element . LOL !</p>
 
-    
+    <!-- This is the code of Javascript -->
+    <script>
+      //J S can change HTML content
+      document.getElementById("para").innerHTML =
+        "Hello this is my first js code ";
+
+      //JS can change HTML attribute
+      document.getElementById("attribute").style.color = "red";
+      document.getElementById("attribute").style.fontSize = "35PX";
+      //JS can Show/Hide HTML Element
+      document.getElementById("hide").style.display = "none";
+      document.getElementById("show").style.display = "block";
+    </script>
   </body>
 </html>
